@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+.header {
+  width: 100%;
+  height: 100vh;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  height: 70px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  color: #4a90e2;
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 800;
+}
+.navbar__links li {
+  margin: 0 15px;
+}
+.navbar__links li a {
+  text-decoration: none;
+  color: #4a90e2;
+  transition: 300ms;
+}
+.navbar__links li a:hover {
+  text-decoration: underline;
+}
+.navbar__links li a:active {
+  text-decoration: underline;
+}
+.hero {
+  width: 100%;
+  height: calc(100% - 70px);
+  overflow: hidden;
+  background-image: url("../Images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* darkens the bg-image */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* make the filter be ab ove the bg imge */
+  z-index: 1;
+}
+.hero__content {
+  position: absolute;
+  /* makes the content be above the image and the filter */
+  z-index: 2;
+  text-align: center;
+}
+.hero__content h1 {
+  color: white;
+  font-size: 55px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.hero__content p {
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.hero__content button {
+  padding: 5px 15px;
+  color: white;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 300ms;
+}
+.hero__content button:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+.main__left {
+  flex: 1;
+  min-width: 200px;
+  max-width: 500px;
+}
+.main__left h4 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #4a90e2;
+}
+.main__left p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #333;
+}
+.main__right {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  /* max-width: 500px; */
+}
+.main__right img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.departments {
+  background-color: aliceblue;
+  padding: 40px 20px;
+}
+.departments__heading {
+  text-align: center;
+}
+.departments__heading h2{
+  font-size: 36px;
+}
+.departments__section {
+  display: flex;
+}
+.departments__section .card {
+  background-color: white;
+  border: 1px solid #ccc;
+  margin: 10px;
+  display: block;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+.departments__section .card i {
+  color: #4a90e2;
+  font-size: 20px;
+  font-weight: 700;
+}
+.departments__section .card h4{
+  color: #333;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+.departments__section .card p {
+  color: #555;
+  font-size: 12px;
+  font-weight: 500;
+}
