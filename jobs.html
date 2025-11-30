@@ -1,12 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-     <link rel="stylesheet" href="Assets/css/styles.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="Assets/css/styles.css" />
+    <!-- remixicon icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <i class="ri-shopping-bag-line"></i>
+        <h1 class="navbar__logo title">Jobs</h1>
+      </div>
+      <!-- navigation -->
+      <ul class="navbar__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="jobs.html" id="active__link">Jobs</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+    <!-- header -->
+    <div class="jobs__header">
+      <h2>Open Positions</h2>
+      <p>Join our team and help us build the future of technology</p>
+    </div>
+    <!-- jobs-main -->
+    <div class="jobs__main">
+      <!-- filter -->
+      <div class="jobs__filter">
+        <div class="jobs__filter-heading">
+          <i class="ri-filter-2-line"></i>
+          <h4>Filters</h4>
+        </div>
+        <form action="">
+          <div class="job-type">
+            <h5>Job Type</h5>
+            <div class="">
+              <input type="checkbox" name="" id="" />
+              <label for="">Full-time</label>
+            </div>
+            <div class="">
+              <input type="checkbox" name="" id="" />
+              <label for="">Part-time</label>
+            </div>
+            <div class="">
+              <input type="checkbox" name="" id="" />
+              <label for="">Contract</label>
+            </div>
+            <div class="">
+              <input type="checkbox" name="" id="" />
+              <label for="">Internship</label>
+            </div>
+          </div>
+          <div class="job-location">
+            <h5>Location</h5>
+
+            <select name="" id="">
+              <option value="All Location" selected>All Locations</option>
+              <option value="Nairobi">Nairobi</option>
+              <option value="Nakuru">Nakuru</option>
+              <option value="Mombasa">Mombasa</option>
+              <option value="Remote">Remote</option>
+            </select>
+          </div>
+          <div class="job-department">
+            <h5>Department</h5>
+            <div class="">
+              <input type="checkbox" name="" id="" />
+              <label for="">Engineering</label>
+            </div>
+            <div class="">
+              <input type="checkbox" name="" id="" />
+              <label for="">Product & Design</label>
+            </div>
+            <div class="">
+              <input type="checkbox" name="" id="" />
+              <label for="">Marketing</label>
+            </div>
+            <div class="">
+              <input type="checkbox" name="" id="" />
+              <label for="">Sales</label>
+            </div>
+            <div class="">
+              <input type="checkbox" name="" id="" />
+              <label for="">Operations</label>
+            </div>
+            <div class="">
+              <input type="checkbox" name="" id="" />
+              <label for="">Finance</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- positions -->
+      <div class="jobs__positions">
+        <p>Showing <b>6</b> positions</p>
+        <select name="" id="">
+          <option value="Most Recent" selected>Most Recent</option>
+          <option value="Department">Department</option>
+          <option value="Location">Location</option>
+        </select>
+        <div class="jobs__positions-card">
+          <h2>Senior Frontend Engineer</h2>
+          <p>
+            Build beautiful, performant user interfaces that delight millions of
+            users worldwide.
+          </p>
+          <i class="ri-map-pin-line"> Nairobi</i>
+          <i class="ri-briefcase-3-line"> Full-time</i>
+          <i class="ri-time-line"> Posted 2 days ago</i>
+          <a href="">Apply</a>
+          <a href="jobs.html">View More</a>
+        </div>
+        <div class="jobs__positions-card">
+          <h2>Senior Frontend Engineer</h2>
+          <p>
+            Build beautiful, performant user interfaces that delight millions of
+            users worldwide.
+          </p>
+          <i class="ri-map-pin-line"> Nairobi</i>
+          <i class="ri-briefcase-3-line"> Full-time</i>
+          <i class="ri-time-line"> Posted 2 days ago</i>
+          <a href="">Apply</a>
+          <a href="jobs.html">View More</a>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer__left">
+        <div class="navbar__logo">
+          <i class="ri-shopping-bag-line"></i>
+          <h1 class="navbar__logo title">Jobs</h1>
+        </div>
+        <p>
+          Building the future of technology with talented people who share our
+          vision for innovation and excellence.
+        </p>
+      </div>
+      <div class="footer__quick-links">
+        <h3>quick links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer__departments">
+        <h3>Departments</h3>
+        <ul>
+          <li>Engineering</li>
+          <li>Product & Design</li>
+          <li>Marketing</li>
+          <li>Sales</li>
+          <li>Operations</li>
+          <li>Finance</li>
+        </ul>
+      </div>
+      <div class="footer__connect">
+        <h3>connect</h3>
+        <div class="footer__connect mail">
+          <i class="ri-mail-line"></i>
+          <p>careers@jobs.com</p>
+        </div>
+        <div class="footer__connect socials">
+          <i class="ri-linkedin-box-fill"></i>
+          <i class="ri-twitter-x-line"></i>
+          <i class="ri-github-fill"></i>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
