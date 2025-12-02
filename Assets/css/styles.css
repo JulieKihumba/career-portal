@@ -289,13 +289,23 @@
 /* JOBS PAGE */
 .jobs__header {
   padding: 30px;
-  border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.jobs__header h2{
+  color: #333;
+  padding-bottom: 15px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.jobs__header p{
+  color: #555;
+  font-size: 16px;
+  font-weight: 400;
 }
 .jobs__main {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  column-gap: 50px;
+  column-gap: 30px;
   padding: 30px;
   background-color: aliceblue;
 }
@@ -303,6 +313,7 @@
   padding: 20px 40px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: white;
+  border-radius: 10px;
 }
 .jobs__filter-heading {
   display: flex;
@@ -318,17 +329,95 @@
   font-size: 18px;
   font-weight: 600;
 }
-.job-type, .job-location, .job-department{
+.job-type,
+.job-location,
+.job-department {
   padding-bottom: 25px;
 }
-form h5{
+.job-type div,
+.job-department div {
+  padding-bottom: 12px;
+}
+form h5 {
   color: #4a90e2;
   padding-bottom: 12px;
   font-size: 16px;
   font-weight: 600;
 }
 .jobs__positions {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.jobs__positions-top {
+  display: flex;
+  justify-content: space-between;
+}
+.jobs__positions-top p{
+  color: #333;
+}
+.jobs__positions-top select{
+  width: 150px;
+  height: 36px;
+  background-color: white;
+  color: #333;
+  padding: 5px 10px;
+}
+.jobs__positions-bottom {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+}
+.jobs__positions-card {
+  padding: 20px 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+.jobs__positions-card h2 {
+  padding-bottom: 20px;
+  color: #4a90e2;
+  font-size: 26px;
+  font-weight: 600;
+}
+.jobs__positions-card p {
+  padding-bottom: 20px;
+}
+.i {
+  padding-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.i i {
+  padding-right: 13px;
+}
+.a {
+  display: flex;
+  justify-content: space-between;
+}
+.apply {
+  text-decoration: none;
+  background-color: #4a90e2;
+   border-radius: 5px;
+  padding: 8px 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 300ms;
+}
+.apply:hover{
+  opacity: 85%;
+}
+.view {
+  text-decoration: none;
+  border: 2px solid#4a90e2;
+  padding: 8px 20px;
+  color: #333;
+  transition: 300ms;
+}
+.view:hover{
+  opacity: 70%;
+}
+/* ABOUT PAGE */
+.about-header {
+  background-color: #4a90e2;
 }
