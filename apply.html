@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-     <link rel="stylesheet" href="Assets/css/styles.css">
- <!-- remixicon icons -->
+    <link rel="stylesheet" href="Assets/css/styles.css" />
+    <!-- remixicon icons -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
       rel="stylesheet"
-    /></head>
-<body>
+    />
+  </head>
+  <body>
     <!-- navbar -->
     <nav class="navbar">
       <div class="navbar__logo">
@@ -23,7 +24,69 @@
         <li><a href="jobs.html">Jobs</a></li>
         <li><a href="about.html">About Us</a></li>
       </ul>
-    </nav> 
+    </nav>
+    <!-- header -->
+    <div class="jobs__header">
+      <h2>Apply to Jobs</h2>
+      <p>
+        Take the first step towards joining our team. Fill out the form below
+        and we'll be in touch soon.
+      </p>
+    </div>
+    <!-- main -->
+    <div class="application">
+      <form action="" class="application__form">
+        <div class="form-name">
+          <label for="">Full Name <span>*</span> </label>
+          <input type="text" placeholder="John Doe" />
+        </div>
+        <div class="form-email">
+          <label for="">Email Address <span>*</span> </label>
+          <input type="email" placeholder="johndoe@example.com" />
+        </div>
+        <div class="form-number">
+          <label for="">Phone Number <span>*</span> </label>
+          <input type="tel" placeholder="+254 7********" />
+        </div>
+        <div class="form-upload">
+          <label for="">Upload CV/Resume <span>*</span> </label>
+          <div class="">
+            <input type="file" />
+            <label for="">
+              <i class="ri-upload-2-line"> </i>
+              Choose file or drag and drop
+            </label>
+          </div>
+          <p>Accepted formats: PDF, DOC, DOCX (Max 5MB)</p>
+        </div>
+        <div class="form-letter">
+          <label for="">Cover Letter <span>*</span></label>
+          <textarea
+            name=""
+            id=""
+            placeholder="Tell us why you're intrested in this position and what makes you a great fit..."
+          ></textarea>
+        </div>
+        <div class="">
+          <h5>What happens next?</h5>
+          <ul>
+            <li>We'll review your application within 5-7 business days</li>
+            <li>
+              If selected, you'll be invited for an initial screening call
+            </li>
+            <li>
+              Successful candidates will proceed to technical/behavioral
+              interviews
+            </li>
+          </ul>
+        </div>
+        <button>Submit Application</button>
+        <p>
+          By submitting this form, you agree to our privacy policy and terms of
+          service.
+        </p>
+      </form>
+    </div>
     <!-- Footer -->
     <div class="footer">
       <div class="footer__left">
@@ -57,7 +120,7 @@
       </div>
       <div class="footer__connect">
         <h3>connect</h3>
-        <div class=" footer__connect mail">
+        <div class="footer__connect mail">
           <i class="ri-mail-line"></i>
           <p>careers@jobs.com</p>
         </div>
@@ -67,6 +130,6 @@
           <i class="ri-github-fill"></i>
         </div>
       </div>
-    </div> 
-</body>
+    </div>
+  </body>
 </html>

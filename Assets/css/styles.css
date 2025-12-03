@@ -291,13 +291,13 @@
   padding: 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.jobs__header h2{
+.jobs__header h2 {
   color: #333;
   padding-bottom: 15px;
   font-size: 40px;
   font-weight: 700;
 }
-.jobs__header p{
+.jobs__header p {
   color: #555;
   font-size: 16px;
   font-weight: 400;
@@ -338,7 +338,7 @@
 .job-department div {
   padding-bottom: 12px;
 }
-form h5 {
+.filter__form h5 {
   color: #4a90e2;
   padding-bottom: 12px;
   font-size: 16px;
@@ -353,10 +353,10 @@ form h5 {
   display: flex;
   justify-content: space-between;
 }
-.jobs__positions-top p{
+.jobs__positions-top p {
   color: #333;
 }
-.jobs__positions-top select{
+.jobs__positions-top select {
   width: 150px;
   height: 36px;
   background-color: white;
@@ -397,14 +397,14 @@ form h5 {
 .apply {
   text-decoration: none;
   background-color: #4a90e2;
-   border-radius: 5px;
+  border-radius: 5px;
   padding: 8px 20px;
   color: white;
   font-size: 16px;
   font-weight: 500;
   transition: 300ms;
 }
-.apply:hover{
+.apply:hover {
   opacity: 85%;
 }
 .view {
@@ -414,10 +414,54 @@ form h5 {
   color: #333;
   transition: 300ms;
 }
-.view:hover{
+.view:hover {
   opacity: 70%;
 }
 /* ABOUT PAGE */
 .about-header {
   background-color: #4a90e2;
+}
+/* APPLY PAGE */
+.application {
+  background-color: aliceblue;
+  padding: 50px 200px;
+}
+
+.application__form {
+  background-color: white;
+  padding: 50px;
+}
+.form-name,
+.form-email,
+.form-number,
+.form-upload,
+.form-letter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+.form-name label,
+.form-email label,
+.form-number label,
+.form-upload label,
+.form-letter label {
+  color: #4a90e2;
+  font-size: 16px;
+  font-weight: 00;
+}
+.form-name span,
+.form-email span,
+.form-number span,
+.form-upload span,
+.form-letter span {
+  color: red;
+}
+.form-name input,
+.form-email input,
+.form-number input,
+.form-letter input {
+  padding: 5px;
+  color: #333;
+  ;
 }
